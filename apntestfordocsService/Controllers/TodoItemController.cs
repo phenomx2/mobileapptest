@@ -14,7 +14,7 @@ namespace apntestfordocsService.Controllers
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            apntestfordocsContext context = new apntestfordocsContext();
+            ApntestfordocsContext context = new ApntestfordocsContext();
             DomainManager = new EntityDomainManager<TodoItem>(context, Request);
         }
 

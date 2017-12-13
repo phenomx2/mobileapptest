@@ -7,7 +7,7 @@ using apntestfordocsService.DataObjects;
 
 namespace apntestfordocsService.Models
 {
-    public class apntestfordocsContext : DbContext
+    public class ApntestfordocsContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -16,9 +16,9 @@ namespace apntestfordocsService.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
 
-        private const string connectionStringName = "Name=MS_TableConnectionString";
+        private const string ConnectionStringName = "Name=MS_TableConnectionString";
 
-        public apntestfordocsContext() : base(connectionStringName)
+        public ApntestfordocsContext() : base(ConnectionStringName)
         {
         } 
 

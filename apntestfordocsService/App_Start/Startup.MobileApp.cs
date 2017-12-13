@@ -26,7 +26,7 @@ namespace apntestfordocsService
                 .ApplyTo(config);
 
             // Use Entity Framework Code First to create database tables based on your DbContext
-            Database.SetInitializer(new apntestfordocsInitializer());
+            Database.SetInitializer(new ApntestfordocsInitializer());
 
             // To prevent Entity Framework from modifying your database schema, use a null database initializer
             // Database.SetInitializer<apntestfordocsContext>(null);
@@ -49,9 +49,9 @@ namespace apntestfordocsService
         }
     }
 
-    public class apntestfordocsInitializer : CreateDatabaseIfNotExists<apntestfordocsContext>
+    public class ApntestfordocsInitializer : CreateDatabaseIfNotExists<ApntestfordocsContext>
     {
-        protected override void Seed(apntestfordocsContext context)
+        protected override void Seed(ApntestfordocsContext context)
         {
             List<TodoItem> todoItems = new List<TodoItem>
             {
